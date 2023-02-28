@@ -58,6 +58,50 @@ public class User {
         end audit trails
      */
 
+    @Transient
+    private String captcha;
+
+    @Transient
+    private String hidden;
+
+    @Transient
+    private String image;
+
+    @Column(name = "LastLoginDate")
+    private Date lastLoginDate;
+
+    public Date getLastLoginDate() {
+        return lastLoginDate;
+    }
+
+    public void setLastLoginDate(Date lastLoginDate) {
+        this.lastLoginDate = lastLoginDate;
+    }
+
+    public String getCaptcha() {
+        return captcha;
+    }
+
+    public void setCaptcha(String captcha) {
+        this.captcha = captcha;
+    }
+
+    public String getHidden() {
+        return hidden;
+    }
+
+    public void setHidden(String hidden) {
+        this.hidden = hidden;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     public Long getIdUser() {
         return idUser;
     }
@@ -162,3 +206,4 @@ public class User {
         this.isDelete = isDelete;
     }
 }
+

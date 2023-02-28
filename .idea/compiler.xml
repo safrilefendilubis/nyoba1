@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="_01JavaWeb" />
+        <module name="JavaWeb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="JavaWeb" target="17" />
+      <module name="_01JavaWeb" target="17" />
       <module name="nyoba1" target="17" />
     </bytecodeTargetLevel>
   </component>
